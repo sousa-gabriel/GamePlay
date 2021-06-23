@@ -6,6 +6,7 @@ import {Rajdhani_500Medium,Rajdhani_700Bold } from '@expo-google-fonts/rajdhani'
 //comando para importar o loading (expo install expo-app-loading)
 import AppLoading from 'expo-app-loading';
 import {SignIn} from './src/screens/SignIn';
+import { StatusBar } from 'react-native';
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -18,6 +19,9 @@ export default function App() {
     return <AppLoading/>
   }
   return (
-    <SignIn />
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
+      <SignIn />
+    </>
   );
 }

@@ -7,13 +7,12 @@ import {ButtonIcon} from '../../components/buttonIcon';
 export function SignIn(){
     return(
         <View style={styles.constainer}>
-            <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
             <Image source={IllustrationImg} style={styles.Image} resizeMode='stretch' />
             <View style={styles.content}>
                 <Text style={styles.title}>
-                    Organize {`\n`}
-                    Suas jogatinas {`\n`}
-                    facilmente
+                    Conecte-se{`\n`}
+                    e organize suas{`\n`}
+                    jogatinas
                 </Text>
                 <Text style={styles.subTitle} >
                     Crie grupos para jogar seus games {`\n`}
