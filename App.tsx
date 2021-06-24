@@ -7,8 +7,8 @@ import AppLoading from 'expo-app-loading';
 //comando para importar o loading (expo install expo-app-loading)
 import { StatusBar } from 'react-native';
 import { Background } from './src/components/Background';
-import {SignIn} from './src/screens/SignIn';
-import { Home } from './src/screens/Home';
+import { Router } from './src/routes';
+
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -23,7 +23,7 @@ export default function App() {
   return (
     <Background>
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
-      <Home />
+      <Router />
     </Background>
   );
 }
