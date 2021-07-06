@@ -8,7 +8,7 @@ import { View, Text } from 'react-native';
 import { GuildIcon } from '../GuildIcon';
 import { GuildProps } from '../Guild';
 import { styles } from './styles';
-interface AppointmentProps {
+export interface AppointmentProps {
     id: string;
     guild: GuildProps;
     category: string;
@@ -25,7 +25,7 @@ export function Appointment({ data, ...rest }: Props) {
     return (
         <RectButton  {...rest}>
             <View style={styles.container}>
-                <GuildIcon />
+                <GuildIcon guildId={data.guild.id} iconId={data.guild.icon} />
                 <View style={styles.content}>
                     <View style={styles.header}>
                         <Text style={styles.title}>
